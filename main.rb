@@ -14,7 +14,7 @@ loop do
 
   begin
     input = gets.to_i
-  end until input < produkts.count+1 && input > -1
+  end while input > produkts.count && input < 0
     
   break if input == 0
 
