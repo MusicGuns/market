@@ -15,7 +15,11 @@ loop do
   input = -1
   while input > produkts.count || input < 0 do
     input = gets.to_i
+<<<<<<< HEAD
   end
+=======
+  end while input > produkts.count && input < 0
+>>>>>>> 5e65afa07df15de92af5878a0585b82d62b8ef37
     
   break if input == 0
 
