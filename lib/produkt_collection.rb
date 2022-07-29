@@ -7,10 +7,10 @@ class ProduktCollection
   def self.from_dir
     # way_book = "./../data/book/*.txt"
     # way_film = "./../data/film/*.txt"
-    
-    ways_book = Dir["./data/book/*.txt"]
-    ways_film = Dir["./data/film/*.txt"]
-    ways_albom = Dir["./data/albom/*.txt"]
+
+    ways_book = Dir["#{__dir__}/../data/book/*.txt"]
+    ways_film = Dir["#{__dir__}/../data/film/*.txt"]
+    ways_albom = Dir["#{__dir__}/../data/albom/*.txt"]
     self.new(book_reader(ways_book), film_reader(ways_film), albom_reader(ways_albom))
     
   end
@@ -22,11 +22,11 @@ class ProduktCollection
   def sort(sort_info)
     case sort_info[:args]
     when :name
-      @produkt.sort_by! {|produkt| produkt.to_s}
+      @produkt.sort_by!(&:to_s)
     when :price
-      @produkt.sort_by! {|produkt| produkt.price}
+      @produkt.sort_by!(&:price)
     when :quantity
-      @produkt.sort_by! {|produkt| produkt.quantity}
+      @produkt.sort_by!(&:quantity)
     end
     @produkt.reverse! if sort_info[:acs] == true
   end

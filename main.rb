@@ -12,22 +12,24 @@ loop do
   produkts.each.with_index(1) {|produkt, i| puts "#{i}. #{produkt}"}
   puts "0. Выход"
 
-  begin
+  input = -1
+  while input > produkts.count || input < 0 do
     input = gets.to_i
-  end until input < produkts.count+1 && input > -1
+  end
     
   break if input == 0
 
-  sum += produkts[input-1].price
+  produkt_to_sale = produkts[input-1]
+  sum += produkt_to_sale.price
   puts
-  puts "Вы выбрали #{produkts[input-1].to_s}"
+  puts "Вы выбрали #{produkt_to_sale.to_s}"
   puts "Всего товаров на сумму #{sum} р"
   puts
   
-    if produkts[input-1].quantity == 1
-    produkts.delete(produkts[input-1])
+    if produkt_to_sale.quantity == 1
+    produkts.delete(produkt_to_sale)
   else
-    produkts[input-1].update(quantity: -1 )
+    produkt_to_sale.update(quantity: -1 )
   end
 end
 
