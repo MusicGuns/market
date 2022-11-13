@@ -3,6 +3,7 @@
 ### Table of Contents
 
 [About](#about)
+[How to add new products](#edit)
 
 <a name="about"><h3>About</h3></a>
 
@@ -30,3 +31,17 @@ This is a simple console shopping market where you can add your products. The im
 C вас 3530 рублей
 
 ```
+
+<a name="edit"><h3>How to add new products</h3></a>
+
+Create a txt file in the appropriate folder with any name
+
+#### Album
+
+```
+MY LITTLE ALIVE BOY  #Name
+Loqiemean #Author 
+рок #Genre
+28.10.2022 #Release date
+1000 #Price
+2 #Count 
