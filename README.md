@@ -4,6 +4,7 @@
 
 [About](#about)
 [How to add new products](#edit)
+[How to use](#use)
 
 <a name="about"><h3>About</h3></a>
 
@@ -36,6 +37,8 @@ C вас 3530 рублей
 
 Create a txt file in the appropriate folder with any name
 
+Specify the content without comment
+
 #### Album
 
 ```
@@ -45,3 +48,40 @@ Loqiemean #Author
 28.10.2022 #Release date
 1000 #Price
 2 #Count 
+```
+
+####Book
+
+```
+Метро 2033 #Name
+Фантастика #Genre
+Дмитрий Глуховский #Author
+400 #Price
+5 #Count
+```
+
+####Film
+
+```
+Алиса в стране чудес #Name
+Тим Бёртон #Director
+25.02.2010 #Release date
+290 #Price
+3 #Count
+```
+
+<a name="use"><h3>How to use</h3></a>
+---------------
+First of all **Ruby** & **Git** must be installed (on Debian based):
+```
+sudo apt install ruby git
+```
+clone repo: 
+```
+git clone https://github.com/moonmeander47/hangman.git && cd hangman
+```
+run:
+```
+bundle exec ruby main.rb
+```
+
