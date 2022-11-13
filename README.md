@@ -1,6 +1,6 @@
 # Market on Ruby
 
-About(#about)
+[About](#about)
 
 <a name="about"><h3>About</h3></a>
 
