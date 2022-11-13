@@ -3,7 +3,9 @@
 ### Table of Contents
 
 [About](#about)
+
 [How to add new products](#edit)
+
 [How to use](#use)
 
 <a name="about"><h3>About</h3></a>
