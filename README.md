@@ -84,6 +84,6 @@ git clone https://github.com/moonmeander47/hangman.git && cd hangman
 ```
 run:
 ```
-bundle exec ruby main.rb
+ruby main.rb
 ```
 
