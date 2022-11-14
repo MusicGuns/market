@@ -34,6 +34,7 @@ This is a simple console shopping market where you can add your products. The im
 C вас 3530 рублей
 
 ```
+___
 
 <a name="edit"><h3>How to add new products</h3></a>
 
@@ -71,6 +72,7 @@ Loqiemean #Author
 290 #Price
 3 #Count
 ```
+___
 
 <a name="use"><h3>How to use</h3></a>
 ---------------
